@@ -46,8 +46,9 @@ menuentry "Windows Server 2012 " {
 insmod part ms_dos
 insmod ntfs
 set root='(hd0,msdos1)'
-serch --no-floppy --fs-uuid --set=root 8428677028675FE2
+search --no-floppy --fs-uuid --set=root 8428677028675FE2
 chainloader +1
+}
 
 [root@myrhel7 myinstallation]# grub2-mkconfig --output=/boot/grub2/grub.cfg
 after done
