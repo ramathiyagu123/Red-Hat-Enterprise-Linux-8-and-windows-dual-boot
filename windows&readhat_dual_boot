@@ -1,6 +1,6 @@
-#first check all partion
-sudo fdisk -l 
-#output will as
+first check all partion-------------------------------------------------
+[root@myrhel7 myinstallation]# fdisk -l 
+output will as---------------------------------------------
 # Disk /dev/sda: 1000.2 GB, 1000204886016 bytes, 1953525168 sectors
 Units = sectors of 1 * 512 = 512 bytes
 Sector size (logical/physical): 512 bytes / 4096 bytes
@@ -19,7 +19,7 @@ Partition 4 does not start on physical sector boundary.
 /dev/sda7      1470924800  1472876543      975872   83  Linux
 /dev/sda8      1472878592  1613535231    70328320   8e  Linux LVM
 #and check boot device as /dev/sda1   * 
-second step is/dev/sda1   *  
+second step is/dev/sda1   * ----------------------------------------------- 
 [root@myrhel7 myinstallation]# blkid
 /dev/mapper/rhel-var: UUID="416a9fff-90c0-4d5e-aa4f-e5ab5cddb329" TYPE="xfs" 
 /dev/sda8: UUID="9d1Mdu-GHbQ-Oloa-11an-Nn9W-aCxY-kwcDns" TYPE="LVM2_member" 
